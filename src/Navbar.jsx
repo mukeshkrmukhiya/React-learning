@@ -36,8 +36,14 @@ export default function Navbar() {
   <li className="nav-item">
     <Link className="nav-link " to= 'hooksrev/Mukesh/kumar'>Hooksrev</Link>
   </li>
+  <li className="nav-item">
+    <Link className="nav-link " to= 'pokemonApi'>PokemonApi</Link>
+  </li>
+  <li className="nav-item">
+    <Link className="nav-link " to= '/livesearch'>Liveserch</Link>
+  </li>
  
-<button className="btn btn-primary  " type="button" onClick={GoBack}>GoBack</button>
+<button className="btn btn-primary mx-5  " type="button" onClick={GoBack}>GoBack</button>
 
 </ul>
 

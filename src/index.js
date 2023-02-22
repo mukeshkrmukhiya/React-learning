@@ -5,7 +5,7 @@ import App from './App';
 // import ncard from './ncard';
 // import Regs from './Regs';
 // import FavS from './FavS';
-import CardA from './CardA';
+// import CardA from './CardA';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 const FullName = createContext();

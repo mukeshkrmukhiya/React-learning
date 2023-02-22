@@ -9,6 +9,8 @@ import Regs from './Regs';
 import Error from './Error'
 import MainHeader from "./MainHeader";
 import Hooksrev from "./Hooksrev";
+import PokemonApi from "./PokemonApi";
+import LiveSearch from "./LiveSearch";
 
 export default function Rout() {return(
 
@@ -26,6 +28,8 @@ export default function Rout() {return(
         <Route  path="/regs" element= {<Regs/>}/>
         <Route path="/favs" element ={<FavS/>} />
         <Route path="/dtime" element ={<Dtime/>} />
+        <Route path="/pokemonApi" element ={<PokemonApi/>} />
+        <Route path="/livesearch" element ={<LiveSearch/>} />
         <Route path="/hooksrev/:myname/:lname" element ={<Hooksrev/>} />
    
         <Route path="*" element ={<Error/>} />
