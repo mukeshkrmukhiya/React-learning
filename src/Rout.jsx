@@ -21,6 +21,7 @@ export default function Rout() {return(
         
         <Route path="/" element= {<MainHeader/>}>
         <Route index element= {<Home/>}/>
+        <Route path="/React-learning" element= {<Home/>}/>
         <Route path="/carda" element= {<CardA/>}/>
         <Route  path="/regs" element= {<Regs/>}/>
         <Route path="/favs" element ={<FavS/>} />
