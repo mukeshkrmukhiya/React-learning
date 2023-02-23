@@ -1,29 +1,34 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import './Dtime.css';
 
-var nDate = new Date().toLocaleDateString();
-var nTime = new Date().toLocaleTimeString();
+
+
 
  function Dtime() {
+    const [UTime, setUTime] = useState( );
+    const [UDate, setUDate] = useState( );
+
+    setInterval(() => {
+        var nDate = new Date().toLocaleDateString();
+        var nTime = new Date().toLocaleTimeString();
+        setUDate(nDate);
+        setUTime(nTime)
+    }, 1000);
 
     
     return(
         
 <>
-         <div id= "hd">
-    <h1 className='heading' >Welcome to India</h1>
-    <p>Today Date {nDate}</p>
-    <p>Today Time {nTime}</p>
+     <div id= "hd" className='bg-transparent'>
+    <h1 className='heading text-danger' >Welcome to India</h1>
+    <p className='text-warning'>Today Date {UDate}</p>
+    <p className='text-success'>Time {UTime}</p>
     
    </div>
    </>
     )
 }
-
-
-
-
 
 
 export default Dtime;

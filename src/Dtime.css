@@ -6,6 +6,7 @@
 }
 body{
   background-color: aqua;
+  
 }
 #hd{
   
@@ -17,6 +18,9 @@ body{
  
 
   
+}
+div{
+  height: 90vh;
 }
 .heading{
   font-size: 100px;
